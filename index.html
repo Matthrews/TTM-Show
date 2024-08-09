@@ -2,17 +2,18 @@
 <html>
 
 <head>
-	<title>webppt幻灯片</title>
-	<meta name="description" content="webppt幻灯片" />
+	<title>Proposal of Table Topics Session | LOTS</title>
+	<link rel="shortcut icon" href="/favicon.ico">
+	<meta name="description" content="Proposal of Table Topics Session | LOTS" />
 	<meta content="text/html;charset=utf-8">
 	<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
 	<!--是否设置自动将你的数字转化为拨号连接|告诉设备不识别邮箱，点击之后不自动发送 |禁止跳转至地图 -->
 	<meta name="format-detection" content="telephone=no,email=no,adress=no" />
-	<!--<link rel="stylesheet" type="text/css" href="../dist/style.css" />-->
 	<link rel="stylesheet" type="text/css" href="https://unpkg.com/webppt@1.0.11/dist/style.css" />
-	<!--所有的系统css放在里面-->
-	<!--自定义css单独文件存放-->
+	<link rel='stylesheet' href='https://unicons.iconscout.com/release/v2.1.9/css/unicons.css'>
+	<link rel='stylesheet' href='./css/bootstrap.min.css'>
+	<link rel="stylesheet" href="./css/style.css">
 	<style>
 		/******下面是自定义页面css样式*******/
 		.page-1 {
@@ -74,12 +75,13 @@
 		<div class="webppt-wrap"
 			data-options='"pageIndicatorColor":["#99FF33","#CC0033","#99FFCC","#999933","#9966CC","#9999FF"]'>-->
 	<div class="webppt-wrap">
-		<div class="page preload-bg" data-animation="34" data-src='img/my/8.jpg'>
+		<div class="page preload-bg" data-animation="34" data-src='./img/my/8.jpg'>
 			<!--<div class="stars"></div>-->
 			<!--为了图片预加载，将图片路径放在data-src属性里-->
 			<!--背景图片也支持预加载,但是要加类名称 preload-bg  如:-->
 			<!--<div class='preload-bg img1' data-src='img/my/8.jpg'></div>-->
-			<img data-src="img/my/t15.png" class="page-center  pt-page-rotateCubeLeftIn pt-page-delay500" />
+			<img data-src="./img/toastmasters-logo@2x.png"
+				class="page-center  pt-page-rotateCubeLeftIn pt-page-delay500" />
 		</div>
 		<div class="page" data-animation="51">
 			<div class="slide">
@@ -107,6 +109,67 @@
 		<div class="page">
 		</div>
 		<div class="page">
+			<div class="section over-hide">
+				<div class="container">
+					<div class="row full-height justify-content-center">
+						<div class="col-12 text-center align-self-center py-5">
+							<div class="section text-center py-5 py-md-0">
+								<input class="pricing" type="checkbox" id="pricing" name="pricing" />
+								<label for="pricing"><span class="block-diff">kayaking<span
+											class="float-right">camping</span></span></label>
+								<div class="card-3d-wrap mx-auto">
+									<div class="card-3d-wrapper">
+										<div class="card-front">
+											<div class="pricing-wrap">
+												<h4 class="mb-5">Kayaking</h4>
+												<h2 class="mb-2"><sup>$</sup>39 / 4<sup>hrs</sup></h2>
+												<p class="mb-4">per person</p>
+												<p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p>
+												<p class="mb-4">Drina, Serbia</p>
+												<a href="#0" class="link">Choose Date</a>
+												<div class="img-wrap img-2">
+													<img src="img/sea.png" alt="">
+												</div>
+												<div class="img-wrap img-1">
+													<img src="img/kayak.png" alt="">
+												</div>
+												<div class="img-wrap img-3">
+													<img src="img/water.png" alt="">
+												</div>
+												<div class="img-wrap img-6">
+													<img src="img/Stone.png" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="card-back">
+											<div class="pricing-wrap">
+												<h4 class="mb-5">Camping</h4>
+												<h2 class="mb-2"><sup>$</sup>29 / 8<sup>hrs</sup></h2>
+												<p class="mb-4">per person</p>
+												<p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p>
+												<p class="mb-4">Tara, Serbia</p>
+												<a href="#0" class="link">Choose Date</a>
+												<div class="img-wrap img-2">
+													<img src="img/grass.png" alt="">
+												</div>
+												<div class="img-wrap img-4">
+													<img src="img/camp.png" alt="">
+												</div>
+												<div class="img-wrap img-5">
+													<img src="img/Ivy.png" alt="">
+												</div>
+												<div class="img-wrap img-7">
+													<img src="img/IvyRock.png" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="page">
 		</div>
@@ -124,12 +187,12 @@
 		</p>
 	</section>
 	<!-- 声音控件 end-->
-	<!--<script src="../dist/index.min.js"></script>-->
+
 	<script src="https://unpkg.com/webppt@1.0.11/dist/index.min.js"></script>
 	<!--所有的js放在里面-->
 	<script>
 		setTimeout(function () {
-			Webppt.start().contextmenu()
+			Webppt.start()
 		}, 1)
 	</script>
 </body>
