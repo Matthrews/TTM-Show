@@ -67,99 +67,144 @@
 			left: 0%;
 			top: 0%;
 		}
+
+		.question {
+			min-height: 216px;
+			border: 2px dotted #eee;
+			border-radius: 12px;
+		}
 	</style>
 </head>
 
 <body>
-	<!--
-		<div class="webppt-wrap"
-			data-options='"pageIndicatorColor":["#99FF33","#CC0033","#99FFCC","#999933","#9966CC","#9999FF"]'>-->
-	<div class="webppt-wrap">
+	<div class="webppt-wrap"
+		data-options='"pageIndicatorColor":["#99FF33","#CC0033","#99FFCC","#999933","#9966CC","#9999FF"]'>
 		<div class="page preload-bg" data-animation="34" data-src='./img/my/8.jpg'>
 			<!--<div class="stars"></div>-->
 			<!--为了图片预加载，将图片路径放在data-src属性里-->
 			<!--背景图片也支持预加载,但是要加类名称 preload-bg  如:-->
 			<!--<div class='preload-bg img1' data-src='img/my/8.jpg'></div>-->
-			<img data-src="./img/toastmasters-logo@2x.png"
+			<img data-src="./img/toastmasters-logo@2x.png" style="transform: translate(-50%,-50%) scale(1.5);"
 				class="page-center  pt-page-rotateCubeLeftIn pt-page-delay500" />
 		</div>
-		<div class="page" data-animation="51">
-			<div class="slide">
-				<img data-src="img/my/t15.png" class="page-center pt-page-flipInRight pt-page-delay500" />
-			</div>
-			<div class="slide" data-animation="32">
-				<p>page-2-2</p>
-				<p>page-2-2</p>
-			</div>
-			<div class="slide">
-				<p>page-2-3</p>
-				<p>page-2-3</p>
-			</div>
-			<div class="slide">
-				<p>page-2-4</p>
-				<p>page-2-4</p>
-			</div>
-			<div class="slide">
-				<p>page-2-5</p>
-				<p>page-2-5</p>
-			</div>
-		</div>
 		<div class="page">
 		</div>
 		<div class="page">
-		</div>
-		<div class="page">
-			<div class="section over-hide">
+			<div class="slide" data-animation="58">
+				<p class="section over-hide">
 				<div class="container">
-					<div class="row full-height justify-content-center">
-						<div class="col-12 text-center align-self-center py-5">
+					<div id="question" class="question px-4 py-3 display-4">Starts...</div>
+					<div class="row mt-4">
+						<div class="col-4 text-center align-self-center">
 							<div class="section text-center py-5 py-md-0">
-								<input class="pricing" type="checkbox" id="pricing" name="pricing" />
-								<label for="pricing"><span class="block-diff">kayaking<span
+								<input class="p1" type="checkbox" id="p1" name="p1" />
+								<label for="p1"><span class="block-diff">kayaking<span
 											class="float-right">camping</span></span></label>
 								<div class="card-3d-wrap mx-auto">
 									<div class="card-3d-wrapper">
 										<div class="card-front">
 											<div class="pricing-wrap">
-												<h4 class="mb-5">Kayaking</h4>
+												<h4 class="mb-5">No.1</h4>
 												<h2 class="mb-2"><sup>$</sup>39 / 4<sup>hrs</sup></h2>
 												<p class="mb-4">per person</p>
 												<p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p>
 												<p class="mb-4">Drina, Serbia</p>
-												<a href="#0" class="link">Choose Date</a>
+												<a href="javascript:void(0);" class="link front p1"
+													onclick="flipFunc('back', 'p1')">Flip</a>
 												<div class="img-wrap img-2">
 													<img src="img/sea.png" alt="">
-												</div>
-												<div class="img-wrap img-1">
-													<img src="img/kayak.png" alt="">
-												</div>
-												<div class="img-wrap img-3">
-													<img src="img/water.png" alt="">
-												</div>
-												<div class="img-wrap img-6">
-													<img src="img/Stone.png" alt="">
 												</div>
 											</div>
 										</div>
 										<div class="card-back">
 											<div class="pricing-wrap">
-												<h4 class="mb-5">Camping</h4>
+												<h4 class="mb-5">No.1</h4>
 												<h2 class="mb-2"><sup>$</sup>29 / 8<sup>hrs</sup></h2>
 												<p class="mb-4">per person</p>
 												<p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p>
 												<p class="mb-4">Tara, Serbia</p>
-												<a href="#0" class="link">Choose Date</a>
+												<a href="javascript:void(0);" class="link back p1"
+													onclick="flipFunc('front', 'p1')">Flip</a>
 												<div class="img-wrap img-2">
 													<img src="img/grass.png" alt="">
 												</div>
-												<div class="img-wrap img-4">
-													<img src="img/camp.png" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4 text-center align-self-center">
+							<div class="section text-center py-5 py-md-0">
+								<input class="p5" type="checkbox" id="p5" name="p5" />
+								<label for="p5"><span class="block-diff">kayaking<span
+											class="float-right">camping</span></span></label>
+								<div class="card-3d-wrap mx-auto">
+									<div class="card-3d-wrapper">
+										<div class="card-front">
+											<div class="pricing-wrap">
+												<h4 class="mb-5">No.2</h4>
+												<h2 class="mb-2"><sup>$</sup>39 / 4<sup>hrs</sup></h2>
+												<p class="mb-4">per person</p>
+												<p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p>
+												<p class="mb-4">Drina, Serbia</p>
+												<a href="javascript:void(0);" class="link front p5"
+													onclick="flipFunc('back', 'p5')">Flip</a>
+												<div class="img-wrap img-2">
+													<img src="img/sea.png" alt="">
 												</div>
-												<div class="img-wrap img-5">
-													<img src="img/Ivy.png" alt="">
+											</div>
+										</div>
+										<div class="card-back">
+											<div class="pricing-wrap">
+												<h4 class="mb-5">No.2</h4>
+												<h2 class="mb-2"><sup>$</sup>29 / 8<sup>hrs</sup></h2>
+												<p class="mb-4">per person</p>
+												<p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p>
+												<p class="mb-4">Tara, Serbia</p>
+												<a href="javascript:void(0);" class="link back p5"
+													onclick="flipFunc('front', 'p5')">Flip</a>
+												<div class="img-wrap img-2">
+													<img src="img/grass.png" alt="">
 												</div>
-												<div class="img-wrap img-7">
-													<img src="img/IvyRock.png" alt="">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4 text-center align-self-center">
+							<div class="section text-center py-5 py-md-0">
+								<input class="p3" type="checkbox" id="p3" name="p3" />
+								<label for="p3"><span class="block-diff">kayaking<span
+											class="float-right">camping</span></span></label>
+								<div class="card-3d-wrap mx-auto">
+									<div class="card-3d-wrapper">
+										<div class="card-front">
+											<div class="pricing-wrap">
+												<h4 class="mb-5">No.3</h4>
+												<h2 class="mb-2"><sup>$</sup>39 / 4<sup>hrs</sup></h2>
+												<p class="mb-4">per person</p>
+												<p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p>
+												<p class="mb-4">Drina, Serbia</p>
+												<a href="javascript:void(0);" class="link front p3"
+													onclick="flipFunc('back', 'p3')">Flip</a>
+												<div class="img-wrap img-2">
+													<img src="img/sea.png" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="card-back">
+											<div class="pricing-wrap">
+												<h4 class="mb-5">No.3</h4>
+												<h2 class="mb-2"><sup>$</sup>29 / 8<sup>hrs</sup></h2>
+												<p class="mb-4">per person</p>
+												<p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p>
+												<p class="mb-4">Tara, Serbia</p>
+												<a href="javascript:void(0);" class="link back p3"
+													onclick="flipFunc('front', 'p3')">Flip</a>
+												<div class="img-wrap img-2">
+													<img src="img/grass.png" alt="">
 												</div>
 											</div>
 										</div>
@@ -169,6 +214,259 @@
 						</div>
 					</div>
 				</div>
+				</p>
+			</div>
+			<div class="slide" data-animation="58">
+				<p class="section over-hide">
+				<div class="container">
+					<div id="question" class="question px-4 py-3 display-4">Starts...</div>
+					<div class="row mt-4">
+						<div class="col-4 text-center align-self-center">
+							<div class="section text-center py-5 py-md-0">
+								<input class="p4" type="checkbox" id="p4" name="p4" />
+								<label for="p4"><span class="block-diff">kayaking<span
+											class="float-right">camping</span></span></label>
+								<div class="card-3d-wrap mx-auto">
+									<div class="card-3d-wrapper">
+										<div class="card-front">
+											<div class="pricing-wrap">
+												<h4 class="mb-5">No.4</h4>
+												<h2 class="mb-2"><sup>$</sup>39 / 4<sup>hrs</sup></h2>
+												<p class="mb-4">per person</p>
+												<p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p>
+												<p class="mb-4">Drina, Serbia</p>
+												<a href="javascript:void(0);" class="link front p4"
+													onclick="flipFunc('back', 'p4')">Flip</a>
+												<div class="img-wrap img-2">
+													<img src="img/sea.png" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="card-back">
+											<div class="pricing-wrap">
+												<h4 class="mb-5">No.4</h4>
+												<h2 class="mb-2"><sup>$</sup>29 / 8<sup>hrs</sup></h2>
+												<p class="mb-4">per person</p>
+												<p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p>
+												<p class="mb-4">Tara, Serbia</p>
+												<a href="javascript:void(0);" class="link back p4"
+													onclick="flipFunc('front', 'p4')">Flip</a>
+												<div class="img-wrap img-2">
+													<img src="img/grass.png" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4 text-center align-self-center">
+							<div class="section text-center py-5 py-md-0">
+								<input class="p2" type="checkbox" id="p2" name="p2" />
+								<label for="p2"><span class="block-diff">kayaking<span
+											class="float-right">camping</span></span></label>
+								<div class="card-3d-wrap mx-auto">
+									<div class="card-3d-wrapper">
+										<div class="card-front">
+											<div class="pricing-wrap">
+												<h4 class="mb-5">No.5</h4>
+												<h2 class="mb-2"><sup>$</sup>39 / 4<sup>hrs</sup></h2>
+												<p class="mb-4">per person</p>
+												<p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p>
+												<p class="mb-4">Drina, Serbia</p>
+												<a href="javascript:void(0);" class="link front p2"
+													onclick="flipFunc('back', 'p2')">Flip</a>
+												<div class="img-wrap img-2">
+													<img src="img/sea.png" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="card-back">
+											<div class="pricing-wrap">
+												<h4 class="mb-5">No.5</h4>
+												<h2 class="mb-2"><sup>$</sup>29 / 8<sup>hrs</sup></h2>
+												<p class="mb-4">per person</p>
+												<p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p>
+												<p class="mb-4">Tara, Serbia</p>
+												<a href="javascript:void(0);" class="link back p2"
+													onclick="flipFunc('front', 'p2')">Flip</a>
+												<div class="img-wrap img-2">
+													<img src="img/grass.png" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4 text-center align-self-center">
+							<div class="section text-center py-5 py-md-0">
+								<input class="p6" type="checkbox" id="p6" name="p6" />
+								<label for="p6"><span class="block-diff">kayaking<span
+											class="float-right">camping</span></span></label>
+								<div class="card-3d-wrap mx-auto">
+									<div class="card-3d-wrapper">
+										<div class="card-front">
+											<div class="pricing-wrap">
+												<h4 class="mb-5">No.6</h4>
+												<h2 class="mb-2"><sup>$</sup>39 / 4<sup>hrs</sup></h2>
+												<p class="mb-4">per person</p>
+												<p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p>
+												<p class="mb-4">Drina, Serbia</p>
+												<a href="javascript:void(0);" class="link front p6"
+													onclick="flipFunc('back', 'p6')">Flip</a>
+												<div class="img-wrap img-2">
+													<img src="img/sea.png" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="card-back">
+											<div class="pricing-wrap">
+												<h4 class="mb-5">No.6</h4>
+												<h2 class="mb-2"><sup>$</sup>29 / 8<sup>hrs</sup></h2>
+												<p class="mb-4">per person</p>
+												<p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p>
+												<p class="mb-4">Tara, Serbia</p>
+												<a href="javascript:void(0);" class="link back p6"
+													onclick="flipFunc('front', 'p6')">Flip</a>
+												<div class="img-wrap img-2">
+													<img src="img/grass.png" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</p>
+			</div>
+			<div class="slide" data-animation="58">
+				<p class="section over-hide">
+				<div class="container">
+					<div id="question" class="question px-4 py-3 display-4">Starts...</div>
+					<div class="row mt-4">
+						<div class="col-4 text-center align-self-center">
+							<div class="section text-center py-5 py-md-0">
+								<input class="p7" type="checkbox" id="p7" name="p7" />
+								<label for="p7"><span class="block-diff">kayaking<span
+											class="float-right">camping</span></span></label>
+								<div class="card-3d-wrap mx-auto">
+									<div class="card-3d-wrapper">
+										<div class="card-front">
+											<div class="pricing-wrap">
+												<h4 class="mb-5">No.7</h4>
+												<h2 class="mb-2"><sup>$</sup>39 / 4<sup>hrs</sup></h2>
+												<p class="mb-4">per person</p>
+												<p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p>
+												<p class="mb-4">Drina, Serbia</p>
+												<a href="javascript:void(0);" class="link front p7"
+													onclick="flipFunc('back', 'p7')">Flip</a>
+												<div class="img-wrap img-2">
+													<img src="img/sea.png" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="card-back">
+											<div class="pricing-wrap">
+												<h4 class="mb-5">No.7</h4>
+												<h2 class="mb-2"><sup>$</sup>29 / 8<sup>hrs</sup></h2>
+												<p class="mb-4">per person</p>
+												<p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p>
+												<p class="mb-4">Tara, Serbia</p>
+												<a href="javascript:void(0);" class="link back p7"
+													onclick="flipFunc('front', 'p7')">Flip</a>
+												<div class="img-wrap img-2">
+													<img src="img/grass.png" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4 text-center align-self-center">
+							<div class="section text-center py-5 py-md-0">
+								<input class="p8" type="checkbox" id="p8" name="p8" />
+								<label for="p8"><span class="block-diff">kayaking<span
+											class="float-right">camping</span></span></label>
+								<div class="card-3d-wrap mx-auto">
+									<div class="card-3d-wrapper">
+										<div class="card-front">
+											<div class="pricing-wrap">
+												<h4 class="mb-5">No.8</h4>
+												<h2 class="mb-2"><sup>$</sup>39 / 4<sup>hrs</sup></h2>
+												<p class="mb-4">per person</p>
+												<p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p>
+												<p class="mb-4">Drina, Serbia</p>
+												<a href="javascript:void(0);" class="link front p8"
+													onclick="flipFunc('back', 'p8')">Flip</a>
+												<div class="img-wrap img-2">
+													<img src="img/sea.png" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="card-back">
+											<div class="pricing-wrap">
+												<h4 class="mb-5">No.8</h4>
+												<h2 class="mb-2"><sup>$</sup>29 / 8<sup>hrs</sup></h2>
+												<p class="mb-4">per person</p>
+												<p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p>
+												<p class="mb-4">Tara, Serbia</p>
+												<a href="javascript:void(0);" class="link back p8"
+													onclick="flipFunc('front', 'p8')">Flip</a>
+												<div class="img-wrap img-2">
+													<img src="img/grass.png" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4 text-center align-self-center">
+							<div class="section text-center py-5 py-md-0">
+								<input class="p9" type="checkbox" id="p9" name="p9" />
+								<label for="p9"><span class="block-diff">kayaking<span
+											class="float-right">camping</span></span></label>
+								<div class="card-3d-wrap mx-auto">
+									<div class="card-3d-wrapper">
+										<div class="card-front">
+											<div class="pricing-wrap">
+												<h4 class="mb-5">No.9</h4>
+												<h2 class="mb-2"><sup>$</sup>39 / 4<sup>hrs</sup></h2>
+												<p class="mb-4">per person</p>
+												<p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p>
+												<p class="mb-4">Drina, Serbia</p>
+												<a href="javascript:void(0);" class="link front p9"
+													onclick="flipFunc('back', 'p9')">Flip</a>
+												<div class="img-wrap img-2">
+													<img src="img/sea.png" alt="">
+												</div>
+											</div>
+										</div>
+										<div class="card-back">
+											<div class="pricing-wrap">
+												<h4 class="mb-5">No.9</h4>
+												<h2 class="mb-2"><sup>$</sup>29 / 8<sup>hrs</sup></h2>
+												<p class="mb-4">per person</p>
+												<p class="mb-1"><i class="uil uil-location-pin-alt size-22"></i></p>
+												<p class="mb-4">Tara, Serbia</p>
+												<a href="javascript:void(0);" class="link back p9"
+													onclick="flipFunc('front', 'p9')">Flip</a>
+												<div class="img-wrap img-2">
+													<img src="img/grass.png" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</p>
 			</div>
 		</div>
 		<div class="page">
@@ -194,6 +492,28 @@
 		setTimeout(function () {
 			Webppt.start()
 		}, 1)
+
+		const qMap = {
+			p1: '巴黎奥运会中哪个项目的比赛瞬间最让你热血沸腾？为什么？',
+			p2: '假如你有机会参加巴黎奥运会，你会选择哪个项目并说说理由？',
+			p3: '每届奥运会都有许多感人的运动员故事，哪一位运动员或哪一刻给你留下了深刻印象？为什么？',
+			p4: '请谈一下奥林匹克精神对你的影响，你如何在生活中体现它？',
+			p5: '2024年巴黎奥运会大量使用AI技术，你认为这些技术将如何改变我们观看和参与奥运会的方式？',
+			p6: '巴黎作为历史悠久的城市，如何将奥运精神与城市文化相融合？你期待在奥运会期间看到哪些独特的文化展示？',
+			p7: '对比以往的奥运会，巴黎奥运会在赛事组织和观众体验方面有哪些创新和进步？',
+			p8: '如果让你为下一届奥运会提出一个新的比赛项目建议，你会提出什么？',
+			p9: '奥运会对你的日常生活有哪些影响？你是否有过因为奥运会而改变的经历或决定？',
+		}
+
+		function flipFunc(type, id) {
+			console.log("flipFunc", type, id)
+			const p = document.getElementById(id);
+			p.checked = type == "back" ? true : false
+			const q = document.getElementById('question')
+			setTimeout(function () {
+				q.innerHTML = type == "back" ? qMap[id] : 'Starts...';
+			}, 700)
+		}
 	</script>
 </body>
 

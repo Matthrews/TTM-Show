@@ -2,6 +2,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
 
+/* Global */
 :root {
   font-size: 20px;
 }
@@ -42,63 +43,7 @@ a:hover {
 .full-height {
   min-height: 100vh;
 }
-[type="checkbox"]:checked,
-[type="checkbox"]:not(:checked) {
-  position: absolute;
-  left: -9999px;
-}
-.pricing:checked + label,
-.pricing:not(:checked) + label {
-  position: relative;
-  display: block;
-  text-align: center;
-  width: 260px;
-  height: 44px;
-  border-radius: 4px;
-  padding: 0;
-  margin: 0 auto;
-  cursor: pointer;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 14px;
-  letter-spacing: 1px;
-  line-height: 44px;
-  padding: 0 25px;
-  padding-right: 27px;
-  overflow: hidden;
-  color: #fff;
-  text-align: left;
-}
-.pricing:checked + label:before,
-.pricing:not(:checked) + label:before {
-  position: absolute;
-  content: "";
-  z-index: -2;
-  background-color: #102770;
-  width: 100%;
-  height: 100%;
-  display: block;
-  top: 0;
-  left: 0;
-}
-.pricing:checked + label:after,
-.pricing:not(:checked) + label:after {
-  position: absolute;
-  content: "";
-  z-index: -1;
-  background-color: #ffeba7;
-  width: 128px;
-  height: 40px;
-  display: block;
-  top: 2px;
-  left: 2px;
-  border-radius: 2px;
-  transition: left 300ms linear;
-}
-.pricing:checked + label:after {
-  left: 130px;
-}
+/* 3d card */
 .block-diff {
   display: block;
   mix-blend-mode: difference;
@@ -112,7 +57,6 @@ a:hover {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   perspective: 1000px;
-  margin-top: 90px;
 }
 .card-3d-wrapper {
   width: 100%;
@@ -144,10 +88,7 @@ a:hover {
 .card-back {
   transform: rotateY(180deg);
 }
-.pricing:checked ~ .card-3d-wrap .card-3d-wrapper {
-  transform: rotateY(180deg);
-  transition: transform 700ms 400ms ease-out;
-}
+
 .pricing-wrap {
   position: relative;
   padding-top: 160px;
@@ -161,6 +102,7 @@ a:hover {
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+
 .pricing-wrap h4 {
   position: relative;
   width: 100%;
@@ -280,24 +222,7 @@ a:hover {
   height: auto;
   display: block;
 }
-.img-1 {
-  position: absolute;
-  display: block;
-  left: -160px;
-  top: -50px;
-  z-index: 5;
-  width: calc(80% + 160px);
-  transform: translate3d(0, 0, 45px) perspective(100px);
-  opacity: 1;
-  pointer-events: auto;
-  transition: transform 400ms 1200ms ease, opacity 400ms 1200ms ease;
-}
-.pricing:checked ~ .card-3d-wrap .card-3d-wrapper .img-1 {
-  opacity: 0;
-  transform: translate3d(-50px, 25px, 45px) perspective(100px);
-  pointer-events: none;
-  transition: transform 400ms ease, opacity 200ms 150ms ease;
-}
+
 .img-2 {
   position: absolute;
   display: block;
@@ -310,98 +235,8 @@ a:hover {
   width: 100%;
   transform: translate3d(0, 0, 15px) perspective(100px);
 }
-.img-3 {
-  position: absolute;
-  display: block;
-  right: -20px;
-  top: -40px;
-  z-index: 5;
-  width: calc(60% + 20px);
-  transform: translate3d(0, 0, 55px) perspective(100px) scale(1);
-  opacity: 1;
-  pointer-events: auto;
-  transition: transform 300ms 1300ms ease, opacity 200ms 1300ms ease;
-}
-.pricing:checked ~ .card-3d-wrap .card-3d-wrapper .img-3 {
-  opacity: 0;
-  transform: translate3d(-50px, 5px, 55px) perspective(100px) scale(0.4);
-  pointer-events: none;
-  transition: transform 400ms ease, opacity 200ms 150ms ease;
-}
-.img-6 {
-  position: absolute;
-  display: block;
-  right: -20px;
-  bottom: -55px;
-  z-index: 5;
-  width: calc(20% + 30px);
-  transform: translate3d(0, 0, 25px) perspective(100px) scale(1);
-  opacity: 1;
-  pointer-events: auto;
-  transition: transform 300ms 1300ms ease, opacity 200ms 1300ms ease;
-}
-.pricing:checked ~ .card-3d-wrap .card-3d-wrapper .img-6 {
-  opacity: 0;
-  transform: translate3d(0, 0, 25px) perspective(100px) scale(0.4);
-  pointer-events: none;
-  transition: transform 400ms ease, opacity 200ms 150ms ease;
-}
 
-.img-4 {
-  position: absolute;
-  display: block;
-  left: -60px;
-  top: -60px;
-  z-index: 5;
-  width: calc(65% + 60px);
-  transform: translate3d(0, 0, 45px) perspective(100px) scale(0.5);
-  opacity: 0;
-  pointer-events: none;
-  transition: transform 400ms ease, opacity 200ms 150ms ease;
-}
-.pricing:checked ~ .card-3d-wrap .card-3d-wrapper .img-4 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translate3d(0, 0, 45px) perspective(100px) scale(1);
-  transition: transform 400ms 1200ms ease, opacity 300ms 1200ms ease;
-}
-.img-5 {
-  position: absolute;
-  display: block;
-  right: -70px;
-  top: -50px;
-  z-index: 6;
-  width: calc(60% + 70px);
-  transform: translate3d(0, 0, 35px) perspective(100px) scale(0.5) rotate(0deg);
-  opacity: 0;
-  pointer-events: none;
-  transition: transform 400ms 100ms ease, opacity 200ms 250ms ease;
-}
-.pricing:checked ~ .card-3d-wrap .card-3d-wrapper .img-5 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translate3d(0, 0, 35px) perspective(100px) scale(1) rotate(10deg);
-  transition: transform 400ms 1300ms ease, opacity 300ms 1300ms ease;
-}
-.img-7 {
-  position: absolute;
-  display: block;
-  right: -30px;
-  bottom: -65px;
-  z-index: 6;
-  width: calc(25% + 30px);
-  transform: translate3d(0, 0, 35px) perspective(100px) scale(0.5);
-  opacity: 0;
-  pointer-events: none;
-  transition: transform 400ms 100ms ease, opacity 200ms 250ms ease;
-}
-.pricing:checked ~ .card-3d-wrap .card-3d-wrapper .img-7 {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translate3d(0, 0, 35px) perspective(100px) scale(1);
-  transition: transform 400ms 1300ms ease, opacity 300ms 1300ms ease;
-}
-
+/* Media */
 .logo {
   position: fixed;
   top: 30px;
@@ -414,4 +249,714 @@ a:hover {
   height: 26px;
   width: auto;
   display: block;
+}
+
+/* p1 */
+label,
+[type="checkbox"]:checked,
+[type="checkbox"]:not(:checked) {
+  position: absolute !important;
+  left: -9999px;
+}
+.p1:checked + label,
+.p1:not(:checked) + label {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 260px;
+  height: 44px;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0 auto;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 44px;
+  padding: 0 25px;
+  padding-right: 27px;
+  overflow: hidden;
+  color: #fff;
+  text-align: left;
+}
+.p1:checked + label:before,
+.p1:not(:checked) + label:before {
+  position: absolute;
+  content: "";
+  z-index: -2;
+  background-color: #102770;
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+}
+.p1:checked + label:after,
+.p1:not(:checked) + label:after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  background-color: #ffeba7;
+  width: 128px;
+  height: 40px;
+  display: block;
+  top: 2px;
+  left: 2px;
+  border-radius: 2px;
+  transition: left 300ms linear;
+}
+.p1:checked + label:after {
+  left: 130px;
+}
+
+.p1:checked ~ .card-3d-wrap .card-3d-wrapper {
+  transform: rotateY(180deg);
+  transition: transform 700ms 400ms ease-out;
+}
+
+/* p2 */
+.p2:checked + label,
+.p2:not(:checked) + label {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 260px;
+  height: 44px;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0 auto;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 44px;
+  padding: 0 25px;
+  padding-right: 27px;
+  overflow: hidden;
+  color: #fff;
+  text-align: left;
+}
+.p2:checked + label:before,
+.p2:not(:checked) + label:before {
+  position: absolute;
+  content: "";
+  z-index: -2;
+  background-color: #102770;
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+}
+.p2:checked + label:after,
+.p2:not(:checked) + label:after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  background-color: #ffeba7;
+  width: 128px;
+  height: 40px;
+  display: block;
+  top: 2px;
+  left: 2px;
+  border-radius: 2px;
+  transition: left 300ms linear;
+}
+.p2:checked + label:after {
+  left: 130px;
+}
+
+.p2:checked ~ .card-3d-wrap .card-3d-wrapper {
+  transform: rotateY(180deg);
+  transition: transform 700ms 400ms ease-out;
+}
+
+/* p3 */
+.p3:checked + label,
+.p3:not(:checked) + label {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 260px;
+  height: 44px;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0 auto;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 44px;
+  padding: 0 25px;
+  padding-right: 27px;
+  overflow: hidden;
+  color: #fff;
+  text-align: left;
+}
+.p3:checked + label:before,
+.p3:not(:checked) + label:before {
+  position: absolute;
+  content: "";
+  z-index: -2;
+  background-color: #102770;
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+}
+.p3:checked + label:after,
+.p3:not(:checked) + label:after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  background-color: #ffeba7;
+  width: 128px;
+  height: 40px;
+  display: block;
+  top: 2px;
+  left: 2px;
+  border-radius: 2px;
+  transition: left 300ms linear;
+}
+.p3:checked + label:after {
+  left: 130px;
+}
+
+.p3:checked ~ .card-3d-wrap .card-3d-wrapper {
+  transform: rotateY(180deg);
+  transition: transform 700ms 400ms ease-out;
+}
+
+/* p4 */
+.p4:checked + label,
+.p4:not(:checked) + label {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 260px;
+  height: 44px;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0 auto;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 44px;
+  padding: 0 25px;
+  padding-right: 27px;
+  overflow: hidden;
+  color: #fff;
+  text-align: left;
+}
+.p4:checked + label:before,
+.p4:not(:checked) + label:before {
+  position: absolute;
+  content: "";
+  z-index: -2;
+  background-color: #102770;
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+}
+.p4:checked + label:after,
+.p4:not(:checked) + label:after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  background-color: #ffeba7;
+  width: 128px;
+  height: 40px;
+  display: block;
+  top: 2px;
+  left: 2px;
+  border-radius: 2px;
+  transition: left 300ms linear;
+}
+.p4:checked + label:after {
+  left: 130px;
+}
+
+.p4:checked ~ .card-3d-wrap .card-3d-wrapper {
+  transform: rotateY(180deg);
+  transition: transform 700ms 400ms ease-out;
+}
+
+/* p5 */
+.p5:checked + label,
+.p5:not(:checked) + label {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 260px;
+  height: 44px;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0 auto;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 44px;
+  padding: 0 25px;
+  padding-right: 27px;
+  overflow: hidden;
+  color: #fff;
+  text-align: left;
+}
+.p5:checked + label:before,
+.p5:not(:checked) + label:before {
+  position: absolute;
+  content: "";
+  z-index: -2;
+  background-color: #102770;
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+}
+.p5:checked + label:after,
+.p5:not(:checked) + label:after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  background-color: #ffeba7;
+  width: 128px;
+  height: 40px;
+  display: block;
+  top: 2px;
+  left: 2px;
+  border-radius: 2px;
+  transition: left 300ms linear;
+}
+.p5:checked + label:after {
+  left: 130px;
+}
+
+.p5:checked ~ .card-3d-wrap .card-3d-wrapper {
+  transform: rotateY(180deg);
+  transition: transform 700ms 400ms ease-out;
+}
+
+/* p6 */
+.p6:checked + label,
+.p6:not(:checked) + label {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 260px;
+  height: 44px;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0 auto;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 44px;
+  padding: 0 25px;
+  padding-right: 27px;
+  overflow: hidden;
+  color: #fff;
+  text-align: left;
+}
+.p6:checked + label:before,
+.p6:not(:checked) + label:before {
+  position: absolute;
+  content: "";
+  z-index: -2;
+  background-color: #102770;
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+}
+.p6:checked + label:after,
+.p6:not(:checked) + label:after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  background-color: #ffeba7;
+  width: 128px;
+  height: 40px;
+  display: block;
+  top: 2px;
+  left: 2px;
+  border-radius: 2px;
+  transition: left 300ms linear;
+}
+.p6:checked + label:after {
+  left: 130px;
+}
+
+.p6:checked ~ .card-3d-wrap .card-3d-wrapper {
+  transform: rotateY(180deg);
+  transition: transform 700ms 400ms ease-out;
+}
+
+/* p7 */
+.p7:checked + label,
+.p7:not(:checked) + label {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 260px;
+  height: 44px;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0 auto;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 44px;
+  padding: 0 25px;
+  padding-right: 27px;
+  overflow: hidden;
+  color: #fff;
+  text-align: left;
+}
+.p7:checked + label:before,
+.p7:not(:checked) + label:before {
+  position: absolute;
+  content: "";
+  z-index: -2;
+  background-color: #102770;
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+}
+.p7:checked + label:after,
+.p7:not(:checked) + label:after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  background-color: #ffeba7;
+  width: 128px;
+  height: 40px;
+  display: block;
+  top: 2px;
+  left: 2px;
+  border-radius: 2px;
+  transition: left 300ms linear;
+}
+.p7:checked + label:after {
+  left: 130px;
+}
+
+.p7:checked ~ .card-3d-wrap .card-3d-wrapper {
+  transform: rotateY(180deg);
+  transition: transform 700ms 400ms ease-out;
+}
+
+/* p8 */
+.p8:checked + label,
+.p8:not(:checked) + label {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 260px;
+  height: 44px;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0 auto;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 44px;
+  padding: 0 25px;
+  padding-right: 27px;
+  overflow: hidden;
+  color: #fff;
+  text-align: left;
+}
+.p8:checked + label:before,
+.p8:not(:checked) + label:before {
+  position: absolute;
+  content: "";
+  z-index: -2;
+  background-color: #102770;
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+}
+.p8:checked + label:after,
+.p8:not(:checked) + label:after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  background-color: #ffeba7;
+  width: 128px;
+  height: 40px;
+  display: block;
+  top: 2px;
+  left: 2px;
+  border-radius: 2px;
+  transition: left 300ms linear;
+}
+.p8:checked + label:after {
+  left: 130px;
+}
+
+.p8:checked ~ .card-3d-wrap .card-3d-wrapper {
+  transform: rotateY(180deg);
+  transition: transform 700ms 400ms ease-out;
+}
+/* p9 */
+.p9:checked + label,
+.p9:not(:checked) + label {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 260px;
+  height: 44px;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0 auto;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 44px;
+  padding: 0 25px;
+  padding-right: 27px;
+  overflow: hidden;
+  color: #fff;
+  text-align: left;
+}
+.p9:checked + label:before,
+.p9:not(:checked) + label:before {
+  position: absolute;
+  content: "";
+  z-index: -2;
+  background-color: #102770;
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+}
+.p9:checked + label:after,
+.p9:not(:checked) + label:after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  background-color: #ffeba7;
+  width: 128px;
+  height: 40px;
+  display: block;
+  top: 2px;
+  left: 2px;
+  border-radius: 2px;
+  transition: left 300ms linear;
+}
+.p9:checked + label:after {
+  left: 130px;
+}
+
+.p9:checked ~ .card-3d-wrap .card-3d-wrapper {
+  transform: rotateY(180deg);
+  transition: transform 700ms 400ms ease-out;
+}
+/* p10 */
+.p10:checked + label,
+.p10:not(:checked) + label {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 260px;
+  height: 44px;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0 auto;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 44px;
+  padding: 0 25px;
+  padding-right: 27px;
+  overflow: hidden;
+  color: #fff;
+  text-align: left;
+}
+.p10:checked + label:before,
+.p10:not(:checked) + label:before {
+  position: absolute;
+  content: "";
+  z-index: -2;
+  background-color: #102770;
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+}
+.p10:checked + label:after,
+.p10:not(:checked) + label:after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  background-color: #ffeba7;
+  width: 128px;
+  height: 40px;
+  display: block;
+  top: 2px;
+  left: 2px;
+  border-radius: 2px;
+  transition: left 300ms linear;
+}
+.p10:checked + label:after {
+  left: 130px;
+}
+
+.p10:checked ~ .card-3d-wrap .card-3d-wrapper {
+  transform: rotateY(180deg);
+  transition: transform 700ms 400ms ease-out;
+}
+/* p11 */
+.p11:checked + label,
+.p11:not(:checked) + label {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 260px;
+  height: 44px;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0 auto;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 44px;
+  padding: 0 25px;
+  padding-right: 27px;
+  overflow: hidden;
+  color: #fff;
+  text-align: left;
+}
+.p11:checked + label:before,
+.p11:not(:checked) + label:before {
+  position: absolute;
+  content: "";
+  z-index: -2;
+  background-color: #102770;
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+}
+.p11:checked + label:after,
+.p11:not(:checked) + label:after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  background-color: #ffeba7;
+  width: 128px;
+  height: 40px;
+  display: block;
+  top: 2px;
+  left: 2px;
+  border-radius: 2px;
+  transition: left 300ms linear;
+}
+.p11:checked + label:after {
+  left: 130px;
+}
+
+.p11:checked ~ .card-3d-wrap .card-3d-wrapper {
+  transform: rotateY(180deg);
+  transition: transform 700ms 400ms ease-out;
+}
+/* p12 */
+.p12:checked + label,
+.p12:not(:checked) + label {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 260px;
+  height: 44px;
+  border-radius: 4px;
+  padding: 0;
+  margin: 0 auto;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 44px;
+  padding: 0 25px;
+  padding-right: 27px;
+  overflow: hidden;
+  color: #fff;
+  text-align: left;
+}
+.p12:checked + label:before,
+.p12:not(:checked) + label:before {
+  position: absolute;
+  content: "";
+  z-index: -2;
+  background-color: #102770;
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+}
+.p12:checked + label:after,
+.p12:not(:checked) + label:after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  background-color: #ffeba7;
+  width: 128px;
+  height: 40px;
+  display: block;
+  top: 2px;
+  left: 2px;
+  border-radius: 2px;
+  transition: left 300ms linear;
+}
+.p12:checked + label:after {
+  left: 130px;
+}
+
+.p12:checked ~ .card-3d-wrap .card-3d-wrapper {
+  transform: rotateY(180deg);
+  transition: transform 700ms 400ms ease-out;
 }
