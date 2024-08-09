@@ -10,8 +10,8 @@
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
 	<!--是否设置自动将你的数字转化为拨号连接|告诉设备不识别邮箱，点击之后不自动发送 |禁止跳转至地图 -->
 	<meta name="format-detection" content="telephone=no,email=no,adress=no" />
-	<link rel="stylesheet" type="text/css" href="https://unpkg.com/webppt@1.0.11/dist/style.css" />
-	<link rel='stylesheet' href='https://unicons.iconscout.com/release/v2.1.9/css/unicons.css'>
+	<link rel='stylesheet' href='./css/unicons@2.1.9.min.css'>
+	<link rel="stylesheet" type="text/css" href="./css/webppt@1.0.10.min.css" />
 	<link rel='stylesheet' href='./css/bootstrap.min.css'>
 	<link rel="stylesheet" href="./css/style.css">
 	<style>
@@ -104,7 +104,7 @@
 			<div class="slide" data-animation="58">
 				<p class="section over-hide">
 				<div class="container">
-					<div id="question" class="question px-4 py-3 display-4">Starts...</div>
+					<div id="question" class="question px-4 py-3 display-4">Start...</div>
 					<div class="row mt-4">
 						<div class="col-4 text-center align-self-center">
 							<div class="section text-center py-5 py-md-0">
@@ -236,7 +236,7 @@
 			<div class="slide" data-animation="58">
 				<p class="section over-hide">
 				<div class="container">
-					<div id="question" class="question px-4 py-3 display-4">Starts...</div>
+					<div id="question" class="question px-4 py-3 display-4">Start...</div>
 					<div class="row mt-4">
 						<div class="col-4 text-center align-self-center">
 							<div class="section text-center py-5 py-md-0">
@@ -368,7 +368,7 @@
 			<div class="slide" data-animation="58">
 				<p class="section over-hide">
 				<div class="container">
-					<div id="question" class="question px-4 py-3 display-4">Starts...</div>
+					<div id="question" class="question px-4 py-3 display-4">Start...</div>
 					<div class="row mt-4">
 						<div class="col-4 text-center align-self-center">
 							<div class="section text-center py-5 py-md-0">
@@ -515,7 +515,7 @@
 	</section>
 	<!-- 声音控件 end-->
 
-	<script src="https://unpkg.com/webppt@1.0.11/dist/index.min.js"></script>
+	<script src="./js/webppt@1.0.10.min.js"></script>
 	<!--所有的js放在里面-->
 	<script>
 		setTimeout(function () {
@@ -533,6 +533,7 @@
 			p8: '如果让你为下一届奥运会提出一个新的比赛项目建议，你会提出什么？',
 			p9: '奥运会对你的日常生活有哪些影响？你是否有过因为奥运会而改变的经历或决定？',
 		}
+		const keys = Object.keys(qMap);
 
 		function flipFunc(type, id) {
 			console.log("flipFunc", type, id)
@@ -540,8 +541,21 @@
 			p.checked = type == "back" ? true : false
 			const q = document.getElementById('question')
 			setTimeout(function () {
-				q.innerHTML = type == "back" ? qMap[id] : 'Starts...';
+				q.innerHTML = type == "back" ? qMap[id] : 'Start...';
 			}, 700)
+		}
+
+		function shuffle(arr) {
+			var random
+			var newArr = []
+
+			while (arr.length) {
+				random = Math.floor(Math.random() * arr.length)
+				newArr.push(arr[random])
+				arr.splice(random, 1)
+			}
+
+			return newArr
 		}
 	</script>
 </body>
