@@ -53,7 +53,7 @@ a:hover {
   position: relative;
   width: 340px;
   max-width: calc(100% - 20px);
-  height: 540px;
+  height: 500px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   perspective: 1000px;
