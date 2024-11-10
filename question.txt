@@ -1,43 +1,67 @@
-在移动互联网时代，用户隐私的价值是一个复杂而多维的话题，涉及技术、法律、伦理和社会等多个层面。以下是9个精心设计的问题，旨在引发深入讨论：
+### Impromptu Session
 
-1. **技术进步与隐私保护：** 
-在移动互联网技术不断进步的今天，我们如何平衡创新与用户隐私保护的需求？
+A book holds a house of gold
 
-杭州萧山检察院对一起利用AI换脸技术侵犯公民个人信息案提起民事公益诉讼，被告因未经同意使用他人人脸信息制作换脸视频而被判决停止侵权、删除信息、公开道歉，并支付赔偿款
+#### Introduction
 
-2. **数据收集的透明度：** 
-用户是否应该有权知道他们的数据被收集的详细情况，以及这些数据如何被使用？
+In this impromptu session, we will explore how reading can enrich and enhance public speaking skills. 
+Reading not only provides knowledge but also helps us learn new expressions and strengthen language organization skills, making our speeches more vivid and persuasive.
 
-3. **隐私政策的可理解性：** 
-许多隐私政策文本复杂难懂，我们如何确保用户能够轻松理解他们的隐私权利？
+#### Objectives
+- To stimulate members' interest in reading and recognize its importance in improving speaking skills.
+- Through interactive questions, allow members to share their reading experiences and how they apply these experiences to their speeches.
 
-4. **个性化服务与隐私权衡：** 
-个性化服务往往需要收集更多用户数据，我们如何在享受个性化服务的同时保护个人隐私？
+#### Time Rules
+- Minimum Required: 1 minutes
+- Suggested: 1.5 minutes
+- Must finished: 2 minutes
 
-朱烨与北京百度网讯科技公司的隐私权纠纷案中，原告发现在百度搜索“减肥”等关键词后，会在特定网站上出现相关广告，认为这侵犯了个人隐私权。
-但法院认为，基于cookie技术的精准网络广告不构成对用户隐私权的侵犯，
-因为这些技术收集的匿名网络偏好信息不能与网络用户个人身份对应识别
+#### Tips
+- Each participant will have 30s to think about the question.
+- When speaking, try to combine personal experiences to make the content more authentic and persuasive.
+- Make full use of body language and facial expressions during the speech.
+- Usage of speak style is strongly encouraged.
 
-5. **儿童在线隐私保护：** 
-在移动互联网时代，我们如何更有效地保护儿童的在线隐私？
+### Questions
 
-6. **隐私泄露的经济影响：** 
-隐私泄露对个人和企业的经济影响有多大？我们如何量化这种影响？
+1. **Question 1:**
+   - **Topic:** What is the last book you read, and how has it influenced your speaking style?
+   - **Purpose:** To understand the books members have recently read and discuss their impact on speaking style.
 
-7. **隐私权的法律保护：** 
-不同国家和地区对隐私权的法律保护力度不一，我们如何在全球范围内推动更一致的隐私保护标准？
+2. **Question 2:**
+   - **Topic:** What speaking techniques have you learned from reading that can be applied to public speaking?
+   - **Purpose:** To guide members in sharing specific techniques learned from reading and discuss how to apply these techniques to speeches.
 
-中国在2021年实施了《个人信息保护法》，旨在加强个人信息的保护，规范个人信息的处理活动，并保障个人的隐私权益。
-欧盟在2018年实施了全球最严格的个人数据保护法规GDPR，该法规对所有处理欧盟居民数据的组织（包括境外组织）都具有约束力。
-  违规的组织可能面临高达全球年收入4%的罚款
+3. **Question 3:**
+   - **Topic:** Which book do you think is most helpful for improving speaking skills, and why?
+   - **Purpose:** To have members recommend books that have been helpful in improving speaking skills and explain why.
 
-8. **隐私与公共安全：** 
-在打击犯罪和维护公共安全的过程中，我们如何界定隐私权的边界？
+4. **Question 4:**
+   - **Topic:** How do you use reading to prepare for a speech topic?
+   - **Purpose:** To explore how members utilize reading resources to find and determine speech topics.
 
-在应对新冠肺炎疫情中，大数据应用在重点人群监测预警和统计分析方面发挥了重要作用，为联防联控和复工复产提供了有力支持。
-但同时，也出现了一些个人信息无序传播的现象，如患者、密切接触者和外地返乡人员的个人信息被非法传播。
+5. **Question 5:**
+   - **Topic:** How do you usually record and organize useful information while reading?
+   - **Purpose:** To understand how members effectively extract and record information from reading.
 
-9. **隐私保护的技术创新：** 
-有哪些新兴技术可以帮助我们在不牺牲用户体验的前提下更好地保护用户隐私？
+6. **Question 6:**
+   - **Topic:** Have you ever quoted content from books in a speech? How did it go?
+   - **Purpose:** To encourage members to share their experiences of quoting books in speeches and discuss the outcomes.
 
-这些问题旨在激发参与者的思考，并鼓励他们从不同角度探讨用户隐私的价值和保护措施。
+7. **Question 7:**
+   - **Topic:** What potential benefits do you think reading fictional works have for public speaking?
+   - **Purpose:** To explore the potential impact of fictional works on enhancing speakers' imagination, creativity, and emotional expression.
+
+8. **Question 8:**
+   - **Topic:** How do you balance reading with speech practice time? How important do you think this balance is for improving speaking skills?
+   - **Purpose:** To discuss the role of time management in improving speaking skills and how to find a balance between reading and speech practice.
+
+
+- What is the last book you read, and how has it influenced your speaking style?
+- What speaking techniques have you learned from reading that can be applied to public speaking?
+- Which book do you think is most helpful for improving speaking skills, and why?
+- How do you use reading to prepare for a speech topic?
+- How do you usually record and organize useful information while reading?
+- Have you ever quoted content from books in a speech? How did it go?
+- What potential benefits do you think reading fictional works have for public speaking?
+- How do you balance reading with speech practice time? why is it important?
